@@ -22,7 +22,6 @@ fs==2.4.16
 geojson==3.0.1
 geopy==2.3.0
 grpcio==1.51.3
-http-parser==0.9.0
 lz4==4.0.2
 manhole==1.7.0
 markerlib==0.6.0
