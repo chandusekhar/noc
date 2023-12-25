@@ -57,7 +57,7 @@ class IGetInventory(BaseInterface):
                     # Output signal mapping
                     "output_discriminator": StringParameter(required=False),
                     # Power gain, in dB
-                    "gain": FloatParameter(),
+                    "gain": FloatParameter(default=1),
                 },
                 required=False,
             ),
@@ -83,16 +83,6 @@ class IGetInventory(BaseInterface):
                     "snmp_oid": OIDParameter(required=False),
                     # ID for IPMI collected
                     "ipmi_id": StringParameter(required=False),
-                    # Optional internals Thresholds ?
-                    # "thresolds": DictListParameter(
-                    #     attrs={
-                    #         "id": StringParameter(required=True),
-                    #         "value": FloatParameter(required=True),
-                    #         "realtion": StringParameter(choices=["<", "<=", ">", ">=", "=", "!="], default="="),
-                    #         "description": StringParameter(required=False),
-                    #     },
-                    #     required=False
-                    # )
                 },
                 required=False,
             ),
